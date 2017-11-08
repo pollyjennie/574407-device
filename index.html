@@ -4,43 +4,43 @@
 	<meta charset="utf-8">
 	<title>HTML Academy: Девайс</title>
 </head>
-<body>
 
+<body>
 	<header class="main-header">
 		<a class="header-logo" href="index.html">
 			<img src="http://placehold.it/150x100" width="" height="" alt="DEVICE">
 		</a>
 		<nav class="main-navigation">
 			<ul class="site-serching">
-				<li class="serching link">Поиск по сайту</li>
+				<li class="serching-link">Поиск по сайту</li>
 			</ul>
 
-			<!-- Как сделать разный вид при авторизации и нет? -->
-			<section class="modal-modal-login">
+			<section class="header-catalog">
+				<!-- Здесь будет форма-->
+			</section>
+
+			<section class="modal-login">
 				<h2>Личный кабинет</h2>
 				<p>Введите свой логин и пароль.</p>
 				<!-- Здесь будет форма-->
 				<span class="modal-close"></span>
 			</section>
 
-			<ul class="user-navigation-h">
-				<li class="compare link"><a href="#compare.html"></a>Сравнить</li>
-				<li class="basket link"><a href="#basket.html"></a>Корзина</li>
+			<ul class="header-user-navigation">
+				<li class="compare-link"><a href="#compare"></a>Сравнить</li>
+				<li class="basket-link"><a href="#basket"></a>Корзина</li>
 			</ul>
 
-			<ul class="services-h">
-				<li class="catalog link"><a href="#catalog.html">Каталог товаров</a></li>
-				<li><a href="#delivery.html">Доставка</a></li>
-				<li><a href="#garanty.html">Гарантия</a></li>
-				<li><a href="#contacts.html">Контакты</a></li>
+			<ul class="services-header">
+				<li><a href="#delivery">Доставка</a></li>
+				<li><a href="#garanty">Гарантия</a></li>
+				<li><a href="#contacts">Контакты</a></li>
 			</ul>			
 		</nav>
 	</header>
 
 
 	<main>
-
-        <!-- HTML-код слайдера? -->
 		<!-- Здесь будет форма слайдера-->
 		<section class="slider1">
 			<a href="">
@@ -93,7 +93,7 @@
 			</figure>	
 		</section>
 
-        <!-- Здесь будет слайдер 2 -->
+    <!-- Здесь будет слайдер 2 -->
 
 		<section class="logo-partners">
 				<ul>
@@ -112,12 +112,11 @@
 				<li>Деловые линии</li>
 				<li>Автотрейдинг</li>
 				<li>ЖелДорЭкспедиция</li>
-
 			</ul>
 			<b>Подробнее о нас</b>
 		</section>
 
-		<section class="contacts">
+		<section class="contacts" id="contacts"><!-- каким элементом будет всплывающая кнопка? -->
 			<h2>Контакты</h2>
 			<p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
 			<a href="http://maps.google.com/gallery">
@@ -128,26 +127,31 @@
 
 
 	<footer>
-		<section class="footer logo">
-                <img src="" width="" height="">
-                г. Москва, ул. Строителей, 15
-          </section>
+		<section class="footer-logo">
+			<img src="" width="" height=""	alt:"Device">
+			г. Москва, ул. Строителей, 15
+		</section> 
 
-          <nav class="user-navigation-f">
+		<nav class="user-navigation-f">
+  		<section class="modal-login">
+				<h2>Личный кабинет</h2>
+				<p>Введите свой логин и пароль.</p>
+				<!-- Здесь будет форма-->
+				<span class="modal-close"></span>
+			</section>
 			<ul>
-				<li class="login"><a href="#sing-in.html"></a>Войти</li>
-				<li class="compare link"><a href="#compare.html"></a>Сравнить</li>
-				<li class="basket link"><a href="#basket.html"></a>Корзина</li>
+				<li class="compare-link"><a href="#compare"></a>Сравнить</li>
+				<li class="basket-link"><a href="#basket"></a>Корзина</li>
 			</ul>
-		Тел: +7&#040;495&#041;495-95-95
-		<!-- иконка на сайт академии -->
-		</nav>
+			<p>Тел: +7&#040;495&#041;495-95-95</p>
+			<!-- иконка на сайт академии -->
+	 </nav>
 
-		<nav class="services-h">
+		<nav class="services-footer">
 			<ul>
-				<li><a href="#delivery.html">Доставка</a></li>
-				<li><a href="#garanty.html">Гарантия</a></li>
-				<li><a href="#contacts.html">Контакты</a></li>
+				<li><a href="#delivery">Доставка</a></li>
+				<li><a href="#garanty">Гарантия</a></li>
+				<li><a href="#contacts">Контакты</a></li>
 			</ul>
 		</nav>
 
@@ -158,10 +162,6 @@
 				<li><a class="social-btm" href="https://www.twitter.com/Device">Twitter</a></li>
 			</ul>
 		</div>
-	
-
-           
-<!-- р из исходной версии документа. Оставлять? -->
 		<p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
 	</footer>
 
