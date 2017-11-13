@@ -165,22 +165,36 @@
 			</figure>	
 		</section>
 
-		<section class="block-services">
-			<div class="block-services-menu">
-				<ul>
-					<li><a class="button" id="Delivery" href="">Доставка</a></li>
-					<li class="button" id="Warranty">Гарантия</li>
-					<li class="button" id="Credit">Кредит</li>
-				</ul>
-			</div> 			
-			<article class="Delivery-content">
-				<h1>Доставка</h1>
+		<section class="block-services"	id="Delivery">
+			<ul class="block-services-menu">
+				<li class="button-checked">Доставка</li>
+				<li class="button">Гарантия</li>
+				<li class="button">Кредит</li>
+			</ul>			
+			<article class="block-services-content">
+				<h2>Доставка</h2>
 				<p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
 			</article>
-			<article class="Warranty-content visually-hidden">
-				<h1>Гарантия</h1>
+		</section>
+
+		<section class="block-services visually-hidden"	id="Warranty">
+			<ul class="block-services-menu">
+				<li class="button">Доставка</li>
+				<li class="button-checked">Гарантия</li>
+				<li class="button">Кредит</li>
+			</ul>
+			<article class="block-services-content">
+				<h2>Гарантия</h2>
 				<p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.<br>Товар, не дом, конечно же.</p>
 			</article>
+		</section>
+
+		<section class="block-services visually-hidden"	id="Credit">
+			<ul class="block-services-menu">
+				<li class="button">Доставка</li>
+				<li class="button">Гарантия</li>
+				<li class="button-checked">Кредит</li>
+			</ul>
 			<article class="Credit-content visually-hidden">
 				<h1>Кредит</h1>
 				<p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные<br>условия кредита. Выгодные для нашего банка, разумеется.</p>
@@ -206,9 +220,7 @@
 				<li>Автотрейдинг</li>
 				<li>ЖелДорЭкспедиция</li>
 			</ul>
-			<a href=""><!-- Куда ведет эта ссылка?-->
-				<span class="button">Подробнее о нас</span>
-			</a>
+			<a class="button" href=""><!-- Куда ведет эта ссылка?--></a>
 		</section>
 
 		<section class="contacts" id="contacts-block">
@@ -221,10 +233,11 @@
 				<img src="map-big.svg" width="957" height="568">
 				<button class="btn-close" type="button">Закрыть карту</button>
 			</span>
-			<button class="button" type="button">Напишите нам</button>
-			<!--Какой тег и атрибуты для кнопок, открывающих всплывающие окна? Какие атрибуты связывают их между собой? Если открывается не форма а рисунок, использовать тег div или form?-->
-			<!--Почему элементы с visually-hidden в классе видно на странице? -->
-			<form action="https://echo.htmlacademy.ru" method="post">
+			<a class="button" href="#form-write-us">Напишите нам</a>
+			<!--Почему элементы с visually-hidden в классе видно на странице? -->	
+		</section>
+
+		<form id="form-write-us"action="https://echo.htmlacademy.ru" method="post">
 				<button class="btn-close" type="button" aria-label="Закрыть"></button>
 				<label for"name-field" class="btn-label">Ваше имя:</label>
 				<input type="text" name="name" id="name-field" placeholder="Представьтесь, пожалуйста">
@@ -237,7 +250,6 @@
 				<br><br>
 				<button  class="button" type="submit" value="Отправить"></button>
 			</form>
-		</section>
 
 
 	<footer>
