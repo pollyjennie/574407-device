@@ -7,7 +7,9 @@
 
 <body>
 	<header class="main-header">
-		<a class="header-logo" href="index.html">Device</a>
+		<a class="header-logo" href="index.html">
+			<h1>Device</h1>
+		</a>
 		<nav class="main-navigation">
 			<ul class="site-serching">
 				<li class="serching-link">Поиск по сайту</li>
@@ -32,12 +34,12 @@
 						<td class="catalog-item">
 							<a href="catalog-item.html">Моноподы для селфи</a>
 						</td>
-						<td class="catalog-item" colspan"2">
+						<td class="catalog-item" colspan="2">
 							<a href="catalog-item.html">Умные часы</a>
 						</td>
 					</tr>
 					<tr>
-						<td class="catalog-item" colspan"3">
+						<td class="catalog-item" colspan="3">
 							<a href="catalog-item.html">Экшн-камеры</a>
 						</td>
 					</tr>
@@ -49,7 +51,9 @@
 					<a  class="login-link" href="login.html">Валентин Петухов</a>
 					<!-- Нужно делать форму входа ?-->
 				</li>
-				<button class="logout-btn" type="submit">Выйти</button>
+				<li>
+					<button class="logout-btn" type="submit">Выйти</button>
+				</li>
 			</ul>
 
 			<ul class="header-user-navigation">
@@ -87,7 +91,7 @@
 			<form class="filter" method="get" action="https://echo.htmlacademy.ru">
 				<fieldset>
 					<legend>Стоимость</legend>
-					<input class="filter-options-input-range"type="range" name="cost">
+					<input class="filter-options-input-range"	type="range" name="price" min="0"	max="50000" step="1">
 				</fieldset>
 				<fieldset>
 					<legend>Цвет</legend>
@@ -190,17 +194,13 @@
 			</ul>
 
 			<div class="pagination">
-				<button class="pagination-left-btn">
-					<h3>Назад</h3>
-				</button>
+				<button class="pagination-left-btn">Назад</button>
 				<ul class="pagination-list">
 					<li class="pagination-item pagination-item-current">1</li>
 					<li class="pagination-item">2</li>
 					<li class="pagination-item">3</li>
 				</ul>
-				<button class="pagination-right-btn">
-					<h3>Вперед</h3>
-				</button>
+				<button class="pagination-right-btn">Вперед</button>
 			</div>	
 		</section>		
 	</main>
