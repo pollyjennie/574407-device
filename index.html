@@ -3,14 +3,15 @@
 <head>
 	<meta charset="utf-8">
 	<title>HTML Academy: Девайс</title>
-	<link rel="stylesheet" href="css/normalize.scc">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link href="css/normalize.scc" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
 	<header class="main-header">
 		<a class="header-logo" href="index.html">
-			<img src="header-logo.png" alt="Device">
+			<img src="img/header-logo.png" width="164" height="36" alt="Device">
 		</a>
 		<nav class="main-navigation">
 			<ul class="site-serching">
@@ -78,8 +79,8 @@
 
 
 	<main>
-		<section class="promo-slider">
-			<img src="promo-slider-1.png" width="374" height="486" alt="Самая длинная селфи палка">
+		<section class="promo-slider slider-1">
+			<img src="img/promo-slider-1.png" width="384" height="486" alt="Самая длинная селфи палка">
 			<article class="promo-slider-content">
 				<h2>Делай селфи как Бен Стиллер!</h2>
 				<p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм
@@ -100,8 +101,8 @@
 			</article>
 		</section>
 		
-		<section class="visually-hidden promo-slider">
-			<img src="promo-slider-2.png" width="345" height="485" alt="Мотивирующие фитнес-браслеты">
+		<section class="promo-slider slider-2 visually-hidden">
+			<img src="img/promo-slider-2.png" width="345" height="485" alt="Мотивирующие фитнес-браслеты">
 			<article class="promo-slider-content">
 				<h2>Худеем правильно!</h2>
 				<p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
@@ -118,8 +119,8 @@
 			</article>
 		</section>
 
-		<section class="visually-hidden promo-slider">
-			<img src="promo-slider-3.png" width="526" height="334" alt="Квадрокоптер">
+		<section class=" promo-slider slider-3 visually-hidden">
+			<img src="img/promo-slider-3.png" width="526" height="334" alt="Квадрокоптер">
 			<article class="promo-slider-content">
 				<h2>Пархает как бабочка, жалит как пчела!</h2>
 				<p>Это обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
@@ -139,34 +140,56 @@
 		</section>
 
 		<section class="block-popular">
-			<figure class="popular-items">
-				<ul>
-					<li>
-						<a href="catalog.html"><figure><img src="popular-1.jpeg" width="160" height="160"><figcaption>Виртуальная реальность</figcaption></figure>
-						</a>
-					</li>
-					<li>
-						<a href="catalog.html"><figure><img src="popular-2.jpeg" width="160" height="160"><figcaption>Моноподы для селфи</figcaption></figure>
-						</a>
-					</li>
-					<li>
-						<a href="catalog.html"><figure><img src="popular-3.jpeg" width="160" height="160"><figcaption>Экшн-камеры</figcaption></figure>
-						</a>
-					</li>
-					<li>
-						<a href="catalog.html"><figure><img src="popular-4.jpeg" width="160" height="160"><figcaption>Фитнес-браслеты</figcaption></figure>
-						</a>
-					</li>
-					<li>
-						<a href="catalog.html"><figure><img src="popular-5.jpeg" width="160" height="160"><figcaption>Умные часы</figcaption></figure>
-						</a>
-					</li>
-					<li>
-						<a href="catalog.html"><figure><img src="popular-6.jpeg" width="160" height="160"><figcaption>Квадрокоптер</figcaption></figure>
-						</a>
-					</li>
-				</ul>
-			</figure>	
+			<ul>
+				<li>
+					<a href="catalog.html">
+						<figure>
+							<p><img src="img/popular-1.png" width="97" height="55"></p>
+							<figcaption>Виртуальная<br>реальность</figcaption>
+						</figure>
+					</a>
+				</li>
+				<li>
+					<a href="catalog.html">
+						<figure>
+							<p><img src="img/popular-2.png" width="86" height="117"></p>
+							<figcaption>Моноподы<br>для селфи</figcaption>
+						</figure>
+					</a>
+				</li>
+				<li>
+					<a href="catalog.html">
+						<figure>
+							<p><img src="img/popular-3.png" width="71" height="87"></p>
+							<figcaption>Экшн-камеры</figcaption>
+						</figure>
+					</a>
+				</li>
+				<li>
+					<a href="catalog.html">
+						<figure>
+							<p><img src="img/popular-4.png" width="107" height="65"></p>
+							<figcaption>Фитнес-браслеты</figcaption>
+						</figure>
+					</a>
+				</li>
+				<li>
+					<a href="catalog.html">
+						<figure>
+							<p><img src="img/popular-5.png" width="56" height="98"></p>
+							<figcaption>Умные часы</figcaption>
+						</figure>
+					</a>
+				</li>
+				<li>
+					<a href="catalog.html">
+						<figure>
+							<p><img src="img/popular-6.png" width="132" height="69"></p>
+							<figcaption>Квадрокоптер</figcaption>
+						</figure>
+					</a>
+				</li>
+			</ul>
 		</section>
 
 		<section class="block-services"	id="Delivery">
@@ -207,10 +230,10 @@
 
 		<section class="logo-partners">
 				<ul>
-					<li class="logo-partners-item"><img src="logo-1.png" width="156" height="100" alt="dJI"></li>
-					<li class="logo-partners-item"><img src="logo-2.png" width="261" height="46" alt="SP GADGETS"></li>
-					<li class="logo-partners-item"><img src="logo-3.png" width="186" height="64" alt="GoPro"></li>
-					<li class="logo-partners-item"><img src="logo-4.png" width="201" height="61" alt="VIVE"></li>
+					<li class="logo-partners-item"><img src="img/logo-1.png" width="260" height="100" alt="dJI"></li>
+					<li class="logo-partners-item"><img src="img/logo-2.png" width="260" height="100" alt="SP GADGETS"></li>
+					<li class="logo-partners-item"><img src="img/logo-3.png" width="260" height="100" alt="GoPro"></li>
+					<li class="logo-partners-item"><img src="img/logo-4.png" width="260" height="100" alt="VIVE"></li>
 				</ul>	
 		</section>
 
@@ -231,10 +254,10 @@
 			<h3>Контакты</h3>
 			<p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
 			<a href="#map-big">
-				<img src="map.svg" width="201" height="61" alt="ул. Строителей, 15">
+				<img src="img/map.jpg" width="560" height="222" alt="ул. Строителей, 15">
 			</a>
 			<span class="map-big-window visually-hidden" id="map-big">
-				<img src="map-big.svg" width="957" height="568"	alt="ул. Строителей, 15">
+				<img src="img/map-big.jpg" width="960" height="559"	alt="ул. Строителей, 15">
 				<button class="btn-close" type="button">Закрыть карту</button>
 			</span>
 			<a class="button" href="#form-write-us">Напишите нам</a>
@@ -258,7 +281,7 @@
 
 	<footer>
 		<a class="footer-logo" href="index.html">
-			<img src="header-logo.png" alt="Device">
+			<img src="img/footer-logo.png" width="163" height="36" alt="Device">
 		</a>
 		<p>г. Москва, ул. Строителей, 15</p>
 
@@ -280,7 +303,7 @@
 			</ul>
 			<p>Тел: +7&#040;495&#041;495-95-95</p>
 			<a href="https://up.htmlacademy.ru/htmlcss/19">
-				<img src="logo-html.png" alt="HTML-Academy">
+				<img src="img/logo-html.png" alt="HTML-Academy">
 			</a>
 		</section>
 

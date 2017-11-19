@@ -1,0 +1,172 @@
+@font-face {
+  font-family: "gilroyextrabold";
+  src: url("fonts/gilroyextrabold-webfont.woff2") format("woff2"),
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "gilroylight";
+  src: url("fonts/gilroylight-webfont.woff2") format("woff2"),
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", Arial sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  color: black;
+  text-transform: capitalize;
+
+  background-color: rgb(255, 255, 255);
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-header {
+  font-size: 15px;
+  line-height: 36px;
+  color: rgb(222, 203, 135);
+
+  background-color: rgb(247, 226, 150);
+}
+
+summary,
+.services-header-item {
+  font-family: "gilroyextrabold", Arial sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: black;
+}
+
+site-serching {
+  opacity: 0.3;
+}
+
+.main-header a:hover,
+.main-header a:focus,
+.serching-link:hover {
+  opacity: 0.6;
+}
+
+.main-header a:active,
+.serching-link:active {
+  opacity: 0.3;
+}
+
+h2 {
+  font-family: "gilroyextrabold", Arial sans-serif;
+  font-size: 47px;
+  font-weight: 800;
+}
+
+.button {
+  font-family: "gilroyextrabold", Arial sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  text-transform: uppercase;
+
+  background-image: url("img/btm-background-img.png");
+  background-position: left center;
+  background-repeat: no-repeat;
+  /*Почему не отображаются фоновые картинки?*/ 
+}
+
+.promo-slider-content-tab{
+  padding: 10px;
+}
+.promo-slider-content-tab th {
+  font-family: "gilroylight";
+  font-size: 36px;
+  font-weight: 300;
+  text-align: left;
+  padding-left: 0px;
+  padding-right: 83px;
+}
+
+.promo-slider-content-tab td {
+  padding-top: 26px;
+  padding-left: 0px;
+  padding-right: 83px;
+}
+
+.block-popular figure p {
+  width: 160px;
+  height: 160px;
+  background-color: rgba(247, 226, 150, 0.5);
+  text-align: center;
+  vertical-align: middle; 
+}
+
+.block-popular img {
+  display: inline-block;
+}
+
+.block-popular figcaption {
+  font-family: "gilroyextrabold";
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.block-popular figure p:hover,
+.block-popular figure p:focus,
+.block-popular figure p:active {
+  background-color: rgb(247, 226, 150);
+}
+
+.block-popular figure p:active img:active,
+.block-popular figcaption:active {
+  opacity: 0.3;
+}
+
+.block-services {
+  background-color: rgb(229, 229, 229);
+}
+
+#Delivery {
+  background-color: rgb(229, 229, 229);
+  background-image: url("img/delivery.svg");
+  background-position: right center;
+  background-repeat: no-repeat; 
+}
+
+/*слайд с гарантией*/
+
+/*слайд с кредитом*/
+
+
+
+
+
+
+
+
+footer {
+  font-color: white;
+  font-size: 15px;
+  line-height: 36px;
+  color: rgb(222, 203, 135);
+
+  background-color: rgb(70, 70, 70);
+}
+
+.services-footer {
+  font-family: "gilroyextrabold", Arial sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
