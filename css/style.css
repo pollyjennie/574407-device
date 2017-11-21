@@ -1,13 +1,13 @@
 @font-face {
   font-family: "gilroyextrabold";
-  src: url("fonts/gilroyextrabold-webfont.woff2") format("woff2"),
+  src: url("fonts/gilroyextrabold-webfont.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "gilroylight";
-  src: url("fonts/gilroylight-webfont.woff2") format("woff2"),
+  src: url("fonts/gilroylight-webfont.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
@@ -15,46 +15,151 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Open Sans", Arial sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
   line-height: 30px;
   font-weight: 300;
+  letter-spacing: 10;
   color: black;
-  text-transform: capitalize;
 
   background-color: rgb(255, 255, 255);
 }
 
 a {
+  color: black;
   text-decoration: none;
-}
-
-.main-header {
-  font-size: 15px;
-  line-height: 36px;
-  color: rgb(222, 203, 135);
-
-  background-color: rgb(247, 226, 150);
-}
-
-summary,
-.services-header-item {
-  font-family: "gilroyextrabold", Arial sans-serif;
-  font-size: 18px;
-  font-weight: 800;
-  text-transform: uppercase;
 }
 
 ul {
   list-style: none;
 }
 
-a {
-  color: black;
+/* Общий вид кнопок*/
+
+.button {
+  font-family: "gilroyextrabold", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  text-align: center;
+  vertical-align: middle;
+  letter-spacing: 200;
+  text-transform: uppercase;
+  /* Для локальных шрифтов писать font-width: 800px и 300px?*/
 }
 
-site-serching {
+.button:active {
   opacity: 0.3;
+}
+
+.button-checked,
+.block-services .button:active {
+  font-family: "gilroyextrabold", Arial, sans-serif;
+  font-size: 18px;
+  color: rgb(247, 225, 132);
+  letter-spacing: 200;
+  padding: 15px 23px;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  background-color: black; 
+}
+
+}
+
+.block-services-content {
+  float: left;
+  width: 437.25px;
+}
+
+.main-header {
+  background-color: rgb(247, 226, 150);
+}
+
+.logo:focus,
+.logo:hover, {
+  opacity: 0.6;
+}
+
+.logo:active {
+  opacity: 0.3;
+}
+
+/* Cтрока поиска */
+
+.site-serching {
+  width: 200px;
+}
+
+.site-serching:focus,
+.site-serching:hover,
+.site-serching:active {
+  border-bottom: 2px solid black;
+}
+
+.site-serching p {
+  opacity: 0.3;
+}
+
+.site-serching p:hover {
+  opacity: 0.6;
+}
+
+.site-serching p:focus {
+  opacity: 1.0;
+}
+
+/* Кнопка поиска */
+.serching-btn {
+  display: none;
+  font: inherit;
+  text-align: center;
+  vertical-align: middle;
+  width: 85px;
+  height: 49px;
+  border: 2px solid black;
+  background: black;
+  /* Почему кнопку видно?*/
+}
+
+.site-serching:focus p:focus .serching-btn:focus {
+  display: block; 
+  background: rgb(247, 226, 150);
+}
+
+.site-serching:hover p:hover .serching-btn:hover {
+  display: block;
+  color: white;
+}
+
+.site-serching:active p:active .serching-btn:active {
+  display: block;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+
+/* Каталог товаров */
+summary,
+.services-header-item {
+  font-family: "gilroyextrabold", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  color: black;
+  letter-spacing: 200;
+  text-transform: uppercase;
+}
+
+.header-catalog article {
+  width: 50%;
+  height: 129px;
+  column-count: 3;
+  column-width: 200px;
+  column-gap: 62px; 
+}
+
+.header-catalog a {
+  padding: 0;
+  line-height: 36px;
+  text-align: left;
 }
 
 .main-header a:hover,
@@ -68,29 +173,39 @@ site-serching {
   opacity: 0.3;
 }
 
-h2 {
-  font-family: "gilroyextrabold", Arial sans-serif;
-  font-size: 47px;
-  font-weight: 800;
+
+.promo-slider {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
 }
 
-.button {
-  font-family: "gilroyextrabold", Arial sans-serif;
-  font-size: 18px;
-  font-weight: 800;
-  text-transform: uppercase;
+.slider-2,
+.slider-3 {
+  display: none;
+}
 
-  background-image: url("img/btm-background-img.png");
-  background-position: left center;
-  background-repeat: no-repeat;
-  /*Почему не отображаются фоновые картинки?*/ 
+.slider-image{
+  float: left;
+  width: 50%;
+}
+
+.promo-slider-content {
+  text-align: left;
+}
+
+h2 {
+  font-family: "gilroyextrabold", Arial, sans-serif;
+  font-size: 47px;
+  line-height: 1.5em;
+  font-weight: 800;
 }
 
 .promo-slider-content-tab{
   padding: 10px;
 }
 .promo-slider-content-tab th {
-  font-family: "gilroylight";
+  font-family: "gilroylight" Arial, sans-serif;
   font-size: 36px;
   font-weight: 300;
   text-align: left;
@@ -104,69 +219,391 @@ h2 {
   padding-right: 83px;
 }
 
-.block-popular figure p {
-  width: 160px;
-  height: 160px;
-  background-color: rgba(247, 226, 150, 0.5);
-  text-align: center;
-  vertical-align: middle; 
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-.block-popular img {
+.block-popular li {
   display: inline-block;
+  vertical-align: middle;
 }
 
 .block-popular figcaption {
-  font-family: "gilroyextrabold";
+  font-family: "gilroyextrabold", Arial, sans-serif;
   font-size: 18px;
   font-weight: 800;
 }
 
-.block-popular figure p:hover,
-.block-popular figure p:focus,
-.block-popular figure p:active {
+.block-popular figure div {
+  width: 160px;
+  height: 160px;
+  background-color: rgba(247, 226, 150, 0.5);
+  text-align: center;
+}
+
+object {
+  text-align: center;
+}
+
+.block-popular figure div:hover,
+.block-popular figure div:focus,
+.block-popular figure div:active {
   background-color: rgb(247, 226, 150);
 }
 
-.block-popular figure p:active img:active,
+.block-popular figure div object:active,
 .block-popular figcaption:active {
   opacity: 0.3;
 }
 
+
+/* Слайдер сервисов */
 .block-services {
+  width: 100%;
+  height: 288px;
   background-color: rgb(229, 229, 229);
 }
 
-#Delivery {
-  background-color: rgb(229, 229, 229);
-  background-image: url("img/delivery.svg");
-  background-position: right center;
-  background-repeat: no-repeat; 
+#Warranty,
+#Credit {
+  display: none;
 }
 
-/*слайд с гарантией*/
+.block-services .block-services-menu {
+  float: left;
+  width: 312px;
+  text-align: left;
+}
 
-/*слайд с кредитом*/
+h3 {
+  font-family: "gilroyextrabold", Arial, sans-serif;
+  font-size: 47px;
+  font-weight: 800;
+  letter-spacing: 10;
+}
+
+.info p,
+.contacts p {
+  letter-spacing: 0;
+}
+
+iframe {
+  float: right;
+  margin-right: 0;
+}
+
+.logo-partners-item {
+  display: inline-block;
+  vertical-align: middle;
+  opacity: 0.2;
+}
+
+.logo-partners-item:hover,
+.logo-partners-item:focus {
+  background-blend-mode: saturation;
+  /* Под вопросом */
+}
 
 
+/* Низ основной части сайта */
+.main-row-bottom .info {
+  float: left;
+  width: 463.92px;
+}
 
+.partners-delivery {
+  list-style: circle;
+  margin-top: 94px;
+}
 
+.contacts {
+  float: right;
+}
 
+.map-big-window {
+  display: none;
+}
 
+.form-write-us {
+  width: 999px;
+  height: 592px;
+  background: white;
+}
 
+#form-write-us input,
+#form-write-us textarea {
+  font: inherit;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 2px;
+  padding-left: 20px; 
+  width: 360px;
+  height: 50px;
+  background-color: rgba(229, 229, 229, 0.5); 
+  border-width: 0px;
+}
+
+#form-write-us textarea {
+  width: 760px;
+  /* Почему нет placeholder(а) в браузере?
+     Как убрать значок по умолчанию в левом нижним углу? */
+}
+
+#form-write-us input:hover,
+#form-write-us textarea:hover {
+  background-color: rgba(229, 229, 229, 0.8); 
+}
+
+#form-write-us input:focus,
+#form-write-us textarea:focus {
+  color: rgb(70, 70, 70);
+  background-color: white;
+  border: 1px solid rgba(247, 226, 150, 0.5);
+}
+
+#form-write-us input:invalid,
+#form-write-us textarea:invalid {
+  background-color: #f6dada; 
+}
+
+#form-write-us .btn-label {
+  font-family: "gilroyextrabold", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 18px; 
+  font-weight: 800;
+}
+
+#form-write-us .button {
+  font: inherit;
+  font-size: 18px;
+  font-weight: 800;
+  text-align: center;
+  vertical-align: middle;
+  letter-spacing: 200;
+  text-transform: uppercase;
+  border-width: 0;
+  background-color: white;
+}
 
 footer {
-  font-color: white;
+  color: white;
   font-size: 15px;
   line-height: 36px;
-  color: rgb(222, 203, 135);
 
   background-color: rgb(70, 70, 70);
 }
 
 .services-footer {
-  font-family: "gilroyextrabold", Arial sans-serif;
+  font-family: "gilroyextrabold", Arial, sans-serif;
   font-size: 18px;
   font-weight: 800;
   text-transform: uppercase;
+}
+
+footer a {
+  color: white;
+}
+
+footer .logo:focus,
+footer .logo:hover {
+  opacity: 0.6;
+/* Cвойство не работает*/
+}
+
+footer .logo:active {
+  opacity: 0.3;
+}
+
+footer a:focus,
+footer a:hover {
+  opacity: 0.6;
+}
+
+footer a:active {
+  opacity: 0.3;
+}
+
+.footer-social {
+  text-align: center;
+}
+
+.footer-social ul {
+  list-style: none;
+}
+
+.social-btm span {
+  color: white;
+}
+
+/* Модальные окна*/
+
+
+/* Страница каталога*/
+
+h4 {
+  font-family: "gilroyextrabold", Arial, sans-serif;
+  font-size: 16px;
+  letter-spacing: 200;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.breadcrumbs a,
+.breadcrumbs li:last-child {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 36px;
+  font-weight: 300;
+  letter-spacing: 10;
+  color: black;
+  opacity: 0.3;
+}
+
+.breadcrumbs a:focus,
+.breadcrumbs a:hover,
+.breadcrumbs-current:focus,
+.breadcrumbs-current:hover {
+  opacity: 0.6;
+}
+
+.breadcrumbs a:active,
+.breadcrumbs-current:active {
+  opacity: 0.1;
+}
+
+.filters {
+  background: #eeeeee;
+}
+
+.filters > h4 {
+  background: #dbdbdb;
+}
+
+.filters fieldset {
+  border: none;
+}
+
+.filters legend {
+  font-family: "gilroyextrabold", Arial, sans-serif;
+  font-size: 18px;
+  letter-spacing: 10;
+  font-weight: 800;
+}
+
+.filters ul {
+  line-height: 40px;
+}
+
+.filter-input:hover + label,
+.filter-input:focus + label {
+  opacity: 0.6;
+}
+
+.filter-input:disabled + label{
+  color: rgb(166, 166, 166);
+}
+
+.filters .button {
+  font: inherit;
+  font-size: 18px;
+  font-weight: 800;
+  text-align: center;
+  vertical-align: middle;
+  letter-spacing: 200;
+  text-transform: uppercase;
+}
+
+.sorting {
+  background: #eeeeee;    
+}
+
+.sorting a {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 300;
+  color: black;
+  opacity: 0.3;
+}
+
+.sorting a:focus,
+.sorting a:hover {
+  opacity: 0.6;
+} 
+
+.sorting a:active {
+  opacity: 1.0; 
+}
+
+.catalog-item-title {
+  font-size: 18px;
+  font-family: "gilroyextrabold", Arial, sans-serif;
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: left;
+  letter-spacing: 10;
+}
+
+.catalog-item-price {
+  font-size: 16px;
+  font-family: "Gilroy" Arial, sans-serif;
+  color: rgb(70, 70, 70);
+  line-height: 1.2;
+  text-align: right;
+  letter-spacing: 10;
+}
+
+.pagination {
+  background: #ebebeb;
+}
+
+.pagination-left-btn {
+  font-size: 16px;
+  font-family: "gilroyextrabold", Arial, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: left;
+  letter-spacing: 200;
+  border: none;
+  background: #ebebeb;
+}
+
+.pagination-right-btn {
+  font-size: 16px;
+  font-family: "gilroyextrabold", Arial, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: right;
+  letter-spacing: 200;
+  border: none;
+  background: #ebebeb;
+}
+
+.pagination a {
+  font-size: 16px;
+  font-family: "gilroyextrabold", Arial, sans-serif;
+  font-weight: bold;
+  opacity: 0.3;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  vertical-align: middle;
+  letter-spacing: 200;
+}
+
+.pagination a:focus,
+.pagination a:hover {
+  opacity: 0.6;
+}
+
+.pagination a:active {
+  opacity: 1.0;
+}
+
+.inner-page footer {
+  font: inherit;
 }
